@@ -9,6 +9,7 @@
   --border-header-color: #ececec;
   --border-projects-color: #eeeeee;
   --bg-header-color: #c4c4c4;
+  --socials-icon-color: #afb1b8;
 }
 
 /*Базові стилі*/
@@ -136,6 +137,11 @@ img {
   margin-right: 50px;
 }
 
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contact-list {
   display: flex;
   margin-left: auto;
@@ -214,33 +220,16 @@ img {
   margin-right: 0;
 }
 
-.features-item::before {
-  content: "";
-  display: block;
-  width: 270px;
+.features-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*width: 270px;*/
   height: 120px;
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--filter-btn-color);
   border-radius: 4px;
-}
-
-.icon-attention::before {
-  background-image: url(../img/icon-feature-1.svg);
-}
-
-.icon-punctuality::before {
-  background-image: url(../img/icon-feature-2.svg);
-}
-
-.icon-planning::before {
-  background-image: url(../img/icon-feature-3.svg);
-}
-
-.icon-technology::before {
-  background-image: url(../img/icon-feature-4.svg);
 }
 
 .features-subtitle {
@@ -326,11 +315,42 @@ img {
 }
 
 .team-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--title-text-color);
+  border-radius: 50%;
+  color: var(--socials-icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
+}
+
+.socials-icon {
+  fill: currentColor;
 }
 
 /*Портфоліо*/
