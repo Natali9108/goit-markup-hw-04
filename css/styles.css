@@ -482,11 +482,11 @@ img {
 }
 
 .nav-footer {
+  padding-right: 70px;
   align-items: baseline;
 }
 
 .address {
-  margin-right: 70px;
 }
 
 .address-list {
@@ -525,6 +525,7 @@ img {
 }
 
 .footer-social {
+  padding-top: 12px;
   align-items: baseline;
 }
 .social-text {
